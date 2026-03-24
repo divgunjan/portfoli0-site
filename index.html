@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyansh Gunjan</title>
+    <link rel="shortcut icon" href="f avicon_nobg.ico" type="image/x-icon">
+    <!-- classic sans-serif fonts -->
+
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body class="logged-out">
+
+    <!-- Top Blue Bar -->
+    <div class="blue-bar">
+        <div class="blue-bar-inner">
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <a href="#" class="logo">facebook</a>
+                <div class="top-nav">
+                </div>
+            </div>
+            <div class="top-settings">
+                <a id="logout-link" href="#">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Wrapper -->
+    <div class="wrapper">
+
+        <!-- LEFT COLUMN -->
+        <div class="left-col">
+            <!-- Profile Picture Box -->
+            <div class="profile-pic-container">
+                <div class="profile-pic">
+                    <!-- Placeholder, replace src if you want an image -->
+                    <img id="profile-photo" src="myphoto.jpeg" alt="Divyansh's Profile Pic">
+                </div>
+                <div class="profile-links">
+                    <a id="photo-toggle" href="#">my photos(1/2)</a>
+                </div>
+            </div>
+
+            <!-- Quote / Bio -->
+            <div class="side-box">
+                <div class="quote" style="display:flex; justify-content: space-between;">
+                    "I build & create. Occasionally picking up new interests to see what sticks."
+                    <span style="color: #3b5998; cursor:pointer;">✎</span>
+                </div>
+            </div>
+
+            <!-- Information -->
+            <div class="side-box">
+                <div class="side-box-header">
+                    Information
+                    <span>✎</span>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Current City:</div>
+                    <div class="info-value">Bangalore, India</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Role:</div>
+                    <div class="info-value">Student & Writer</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Interests:</div>
+                    <div class="info-value">Machine Learning, Data Structures and Algorithms, Backend Systems
+                    </div>
+                </div>
+            </div>
+
+            <!-- Friends / Social Links -->
+            <div class="side-box">
+                <div class="side-box-header">
+                    Links
+                    <span>✎</span>
+                </div>
+                <div class="friends-grid">
+                    <a href="https://github.com/divgunjan" target="_blank" class="friend-item">
+                        <div class="friend-pic">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                alt="GitHub">
+                        </div>
+                        <span class="friend-name">GitHub</span>
+                    </a>
+                    <a href="https://open.spotify.com/show/7xB04oc0PX9A485OUX7sUC" target="_blank" class="friend-item">
+                        <div class="friend-pic"
+                            style="background:#1DB954; display: flex; align-items: center; justify-content: center;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.54.659.301 1.02zm1.44-3.3c-.301.42-.84.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.84.241 1.2zM20.16 9.6C16.44 7.38 9.54 7.2 5.58 8.4c-.6.18-1.2-.181-1.38-.781s.18-1.2.78-1.381c4.56-1.32 12.12-1.08 16.44 1.5.54.3.72 1.02.42 1.56-.24.6-.96.78-1.68.301z" />
+                            </svg>
+                        </div>
+                        <span class="friend-name">Spotify</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/divyanshgunjan/" target="_blank" class="friend-item">
+                        <div class="friend-pic">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                                alt="LinkedIn">
+                        </div>
+                        <span class="friend-name">LinkedIn</span>
+                    </a>
+                    <a href="https://x.com/divyxnshgunjxn" target="_blank" class="friend-item">
+                        <div class="friend-pic">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg"
+                                alt="Twitter">
+                        </div>
+                        <span class="friend-name">Twitter</span>
+                    </a>
+                    <a href="https://tih.bearblog.dev/" target="_blank" class="friend-item">
+                        <div class="friend-pic"
+                            style="background:#ee802f; display: flex; align-items: center; justify-content: center;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 4.44v2.83c7 0 12.67 5.7 12.67 12.72h2.83C19.5 11.41 12.56 4.44 4 4.44zm0 5.67v2.83c3.85 0 6.94 3.12 6.94 7.03h2.84c0-5.46-4.39-9.86-9.78-9.86zM5.42 17.16c-1.35 0-2.29.98-2.29 2.14 0 1.18.91 2.15 2.29 2.15 1.34 0 2.25-.97 2.25-2.15 0-1.16-.91-2.14-2.25-2.14z" />
+                            </svg>
+                        </div>
+                        <span class="friend-name">Blog</span>
+                    </a>
+                    <a href="https://www.goodreads.com/user/show/169801773-divyansh" target="_blank"
+                        class="friend-item">
+                        <div class="friend-pic"
+                            style="background:#e9e2c9; display: flex; align-items: center; justify-content: center;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#382110"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.5 0C5.148 0 0 5.148 0 11.5S5.148 23 11.5 23 23 17.852 23 11.5 17.852 0 11.5 0zm5.66 16.5H6.84v-1.17h10.32v1.17zm0-2.33H6.84V13h10.32v1.17zm0-3.53H6.84v-1.17h10.32v1.17zm0-2.34H6.84V7.13h10.32V8.3z" />
+                            </svg>
+                        </div>
+                        <span class="friend-name">Goodreads</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Albums / Projects -->
+            <div class="side-box">
+                <div class="side-box-header">
+                    <span>2 of 4 albums</span>
+                    <span>See All</span>
+                </div>
+                <div class="albums-grid">
+                    <a href="https://divgunjan.github.io/mementomori.html" target="_blank">
+                        <div class="album-pic" style="background: #2b2b2b;"><span
+                                style="color:white; line-height:60px; text-align:center; display:block; font-size:9px;">Memento</span>
+                        </div>
+                    </a>
+                    <a href="mailto:divyanshconvinces@gmail.com">
+                        <div class="album-pic" style="background: #d8dfea;"><span
+                                style="color:#3b5998; line-height:60px; text-align:center; display:block; font-size:9px;">Contact</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="right-col">
+            <!-- Tabs -->
+            <div class="tabs">
+                <div class="tab active" data-tab="wall">Wall</div>
+                <div class="tab" data-tab="info">Info</div>
+                <div class="tab" data-tab="photos">Photos</div>
+                <div class="tab"
+                    style="font-weight: normal; color: #888; font-size: 16px; line-height: 12px; padding-top: 5px;">+
+                </div>
+            </div>
+
+            <div class="tab-panel active" id="tab-wall">
+
+            <!-- Latest Update Box -->
+            <div class="status-update">
+                <div class="status-tabs">
+                    <div class="status-tab"><span style="color:#5b74a8; font-size: 14px;">★</span> Latest Update</div>
+                </div>
+                <div class="status-content" style="padding: 5px; font-size: 12px; line-height: 1.4;">
+                    Check out my newest podcast episode on <a href="https://open.spotify.com/show/7xB04oc0PX9A485OUX7sUC" target="_blank">Spotify</a> 
+                    and my latest blog post on <a href="https://tih.bearblog.dev/" target="_blank">Thoughts in Hibernation</a>.
+                </div>
+            </div>
+
+            <div class="feed-filters">
+                <span class="active">All Posts</span>
+            </div>
+
+            <!-- Post 1 -->
+            <div class="post">
+                <div class="post-pic">DG</div>
+                <div class="post-content">
+                    <div class="post-header">
+                        <a href="#" class="post-name">Divyansh Gunjan</a>
+                    </div>
+                    <div class="post-text">
+                        I got into machine learning when I was 15 during the lockdown. It was an eye-opener. Programming
+                        wasn't my initial calling, but it quickly became the backbone of my journey.
+                    </div>
+                    <div class="post-actions">
+                        <span class="post-time">2 hours ago</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="post">
+                <div class="post-pic" style="background: #1DB954;">
+                    <img src="photos/logo.png" alt="The Whimper Podcast logo">
+                </div>
+                <div class="post-content">
+                    <div class="post-header">
+                        <a href="https://open.spotify.com/show/7xB04oc0PX9A485OUX7sUC" target="_blank"
+                            class="post-name">The Whimper Podcast</a>
+                    </div>
+                    <div class="post-text">
+                        A space science podcast covering intriguing mysteries of the cosmos. Amassed over 4,000+
+                        downloads across various platforms. Check it out!
+                    </div>
+                    <div class="post-actions">
+                        <span class="post-time">Yesterday at 4:20pm</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action post 1 -->
+            <div class="action-post">
+                <div class="action-icon">💼</div>
+                <div style="font-size: 11px;">
+                    <a href="#" class="post-name">Divyansh Gunjan</a> went from interning as a Mechanical Design
+                        Intern to Information Science student.
+                </div>
+            </div>
+
+            <!-- Action post 2 -->
+            <div class="action-post">
+                <div class="action-icon" style="background-color: transparent;">✍️</div>
+                <div style="font-size: 11px;">
+                    <a href="#" class="post-name">Divyansh Gunjan</a> wrote a new essay on <a
+                        href="https://tih.bearblog.dev/" target="_blank">his blog</a>.
+                </div>
+            </div>
+
+            <!-- Central Large Text -->
+            <div class="the-social-network-banner">
+                the developer network
+            </div>
+
+            <!-- Post 3 -->
+            <div class="post">
+                <div class="post-pic">DG</div>
+                <div class="post-content">
+                    <div class="post-header">
+                        <a href="#" class="post-name">Divyansh Gunjan</a>
+                    </div>
+                    <div class="post-text">
+                        <p>During 2022-23, I spent time building projects, joining communities, and even started my own
+                            space science podcast. I also interned at three companies—twice as a graphic designer and
+                            once as a mechanical design intern on static rocket test pads. Everything adds up.</p>
+                    </div>
+                    <div class="post-actions">
+                        <span class="post-time">October 24 at 9:15am</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 4 -->
+            <div class="post">
+                <div class="post-pic">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub">
+                </div>
+                <div class="post-content">
+                    <div class="post-header">
+                        <a href="https://github.com/divgunjan" target="_blank" class="post-name">GitHub Projects</a>
+                    </div>
+                    <div class="post-text">
+                        Open Source collection of my coding projects, experiments, and technical explorations spanning
+                        web development to machine learning.
+                    </div>
+                    <div class="post-actions">
+                        <span class="post-time">October 1 at 2:00pm</span> · <a href="#">Comment</a> · <a
+                            href="#">Like</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-post" style="border-bottom: none;">
+                <div class="action-icon" style="background-color: transparent;">👥</div>
+                <div style="font-size: 11px;">
+                    <a href="#" class="post-name">Divyansh Gunjan</a> has joined no groups.
+                </div>
+            </div>
+
+            </div>
+
+            <div class="tab-panel" id="tab-info">
+                <div class="status-update">
+                    <div class="status-tabs">
+                        <div class="status-tab"><span style="color:#5b74a8; font-size: 14px;">ℹ</span> Info Page</div>
+                    </div>
+                    <div class="info-page-grid">
+                        <div class="info-page-card">
+                            <h4>About Me</h4>
+                            <p>Builder and writer exploring machine learning, backend systems, and long-form internet writing.</p>
+                        </div>
+                        <div class="info-page-card">
+                            <h4>Current Focus</h4>
+                            <p>Improving problem-solving in DSA, shipping practical projects, and documenting ideas through essays.</p>
+                        </div>
+                        <div class="info-page-card">
+                            <h4>Location</h4>
+                            <p>Bangalore, India</p>
+                        </div>
+                        <div class="info-page-card">
+                            <h4>Contact</h4>
+                            <p><a href="mailto:divyanshconvinces@gmail.com">divyanshconvinces@gmail.com</a></p>
+                        </div>
+                        <div class="info-page-card tech-stack-card">
+                            <h4>Current Tech Stack</h4>
+                            <div class="tech-stack-grid">
+                                <div class="tech-category">
+                                    <h5>Languages</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">C</span>
+                                        <span class="tech-tag">C++</span>
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">HTML5</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">Markdown</span>
+                                    </div>
+                                </div>
+                                <div class="tech-category">
+                                    <h5>Frameworks</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">FastAPI</span>
+                                        <span class="tech-tag">Gemini API</span>
+                                    </div>
+                                </div>
+                                <div class="tech-category">
+                                    <h5>Databases</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">PostgreSQL</span>
+                                    </div>
+                                </div>
+                                <div class="tech-category">
+                                    <h5>Tools and IDEs</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">VS Code</span>
+                                        <span class="tech-tag">PyCharm</span>
+                                        <span class="tech-tag">Google Colab</span>
+                                        <span class="tech-tag">Postman</span>
+                                        <span class="tech-tag">Antigravity</span>
+                                    </div>
+                                </div>
+                                <div class="tech-category">
+                                    <h5>DevOps and Platforms</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">Git</span>
+                                        <span class="tech-tag">GitHub</span>
+                                        <span class="tech-tag">GitHub Actions</span>
+                                        <span class="tech-tag">Vercel</span>
+                                        <span class="tech-tag">Ubuntu</span>
+                                    </div>
+                                </div>
+                                <div class="tech-category">
+                                    <h5>AI / ML / Data Science</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">NumPy</span>
+                                        <span class="tech-tag">Pandas</span>
+                                        <span class="tech-tag">Matplotlib</span>
+                                        <span class="tech-tag">Scikit-learn</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-page-card tech-stack-card research-card">
+                            <h4>Research Papers Read</h4>
+                            <ul class="research-list">
+                                <li><a href="https://proceedings.neurips.cc/paper_files/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf" target="_blank">[Machine Learning: The High Interest Credit Card of Technical Debt]</a></li>
+                                <li><a href="https://scholar.google.com/scholar?q=Mind+Your+Tone%3A+Investigating+How+Prompt+Politeness+Affects+LLM+Accuracy" target="_blank">[Mind Your Tone: Investigating How Prompt Politeness Affects LLM Accuracy]</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="tab-photos">
+                <div class="status-update">
+                    <div class="status-tabs">
+                        <div class="status-tab"><span style="color:#5b74a8; font-size: 14px;">📷</span> Photos</div>
+                    </div>
+                    <div class="photos-page-grid">
+                        <div class="photo-card"><img src="photos/1%20(1).jpeg" alt="Photo 1"></div>
+                        <div class="photo-card"><img src="photos/1%20(2).jpeg" alt="Photo 2"></div>
+                        <div class="photo-card"><img src="photos/1%20(3).jpeg" alt="Photo 3"></div>
+                        <div class="photo-card"><img src="photos/1%20(4).jpeg" alt="Photo 4"></div>
+                        <div class="photo-card"><img src="photos/1%20(5).jpeg" alt="Photo 5"></div>
+                        <div class="photo-card"><img src="photos/1%20(6).jpeg" alt="Photo 6"></div>
+                        <div class="photo-card"><img src="photos/1%20(7).jpeg" alt="Photo 7"></div>
+                        <div class="photo-card"><img src="photos/1%20(8).jpeg" alt="Photo 8"></div>
+                        <div class="photo-card"><img src="photos/1%20(9).jpeg" alt="Photo 9"></div>
+                        <div class="photo-card"><img src="photos/1%20(10).jpeg" alt="Photo 10"></div>
+                        <div class="photo-card"><img src="photos/1%20(11).jpeg" alt="Photo 11"></div>
+                        <div class="photo-card"><img src="photos/1%20(12).jpeg" alt="Photo 12"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="login-screen" class="login-screen" aria-live="polite">
+        <div class="login-box">
+            <p class="login-title">Session Locked</p>
+            <p class="login-subhint">Hint: "highlight the sentence below"</p>
+            <p id="login-hint" class="login-hint"></p>
+            <input id="login-input" class="login-input" type="text" maxlength="120"
+                placeholder="Type the sentence exactly">
+            <button id="login-button" class="login-button" type="button">Login</button>
+            <p id="login-error" class="login-error"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
